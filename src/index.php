@@ -27,6 +27,7 @@ require 'FizzBuzz.php';
 $output = "";
 $oldstart = "";
 $oldend = "";
+$report = "";
 
 if (isset($_POST['submit'])) {
     $oldstart = isset($_POST['start']) ? $_POST['start'] : '';
@@ -38,6 +39,7 @@ if (isset($_POST['submit'])) {
         $output = "Please enter start and end numbers ";
     } else {
         $output = $fizzbuzz->outputFizzBuzz($start, $end);
+        $report = $fizzbuzz->createReport($output);
     }
 }
 ?>
@@ -55,6 +57,8 @@ if (isset($_POST['submit'])) {
 <h2>Output</h2>
 <?php
 echo $output;
+echo '<br/>';
+echo nl2br($report);
 ?>
 </body>
 </html>
