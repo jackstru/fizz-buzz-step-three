@@ -38,6 +38,8 @@ if (isset($_POST['submit'])) {
     if (strlen($_POST['start']) < 1 || strlen($_POST['end']) < 1) {
         $output = "Please enter start and end numbers ";
     } else {
+        var_dump($start);
+        var_dump($end);
         $output = $fizzbuzz->outputFizzBuzz($start, $end);
         $report = $fizzbuzz->createReport($output);
     }

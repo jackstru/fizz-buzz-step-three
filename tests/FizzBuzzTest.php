@@ -44,6 +44,9 @@ class FizzBuzzTest extends TestCase
             [1, 5, "1 2 lucky 4 buzz"],
             [1, 15, "1 2 lucky 4 buzz fizz 7 8 fizz buzz 11 fizz lucky 14 fizzbuzz"],
             [1, 20, "1 2 lucky 4 buzz fizz 7 8 fizz buzz 11 fizz lucky 14 fizzbuzz 16 17 fizz 19 buzz"],
+            [1, 45, "1 2 lucky 4 buzz fizz 7 8 fizz buzz 11 fizz lucky 14 fizzbuzz 16 17 fizz 19 buzz fizz 22 lucky fizz buzz 26 fizz 28 29 lucky lucky lucky lucky lucky lucky lucky lucky lucky lucky buzz 41 fizz lucky 44 fizzbuzz"],
+
+
             [90, 93, "fizzbuzz 91 92 lucky"]
         ];
     }

@@ -37,7 +37,7 @@ class FizzBuzz
 
     function checkForLucky($num)
     {
-        return strpos((string)$num, '3') !== false ? "lucky" : $num;
+        return strpos((string)$num, '3') !== false;
     }
 
 
@@ -61,7 +61,6 @@ class FizzBuzz
 
         $range = range($start, $end);
         $output = "";
-
 
         foreach ($range as $number) {
             if($this->checkForLucky($number)) {
